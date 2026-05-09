@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE   = 'ramram27/jenkins_devops'
+        DOCKER_IMAGE   = 'sakshik007/jenkins_devops'
         DOCKER_TAG     = 'latest'
         CONTAINER_NAME = 'jenkins_devops_container'
         PORT           = '3000'
@@ -17,7 +17,7 @@ pipeline {
         stage('Clone Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/ramram27/jenkins-devops.git'
+                    url: 'https://github.com/sakshik2023/jenkins-devops.git'
             }
         }
 
